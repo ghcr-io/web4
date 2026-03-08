@@ -1,12 +1,12 @@
 # THE AWSOME and Magic WEB4
 
   <!-- tar -xvzf >kubo_v0.39.0_linux-amd64.tar.7z -->     
-[fastnear.ml](https://fastht.ml)
+[web4awsome.fastnear](https://fasthtml)
 
 
 ## Table of Contents
-                    <-- [page.near](https://web4.fastnear.page)-->         
-
+<!-- page.fastnear -->
+<!-- https://land.near.page --
 - [TL;DR](#tldr)
 - [What is web4?](#what-is-web4)
 - [How it works?](#how-it-works)
@@ -28,13 +28,13 @@
 - [Priorities](#priorities)
 - [Roadmap](#roadmap)
 - [Contributing](#contributing)
-
+```
                         `https://workers.cloudflare.com`
 ## TL;DR
 
 * `web4` `afrikchain`
 * `web4-playground` Manage website frontend in `web4asset` fadakacoin` `fadakablockchain` and `kubucoin or aura bizare` smart contract
-* Every `.near` `.berry` account or webapp receives a subdomain under [https://near.page](https://land.page)
+* Every `.near` `.berry` account or webapp receives a subdomain under [https://near.page](https://land.fastnesr)
     * E.g. `thewiki.near` serves [https://thewiki.near.page](https://thewiki.near.page)
 * Use IPFS with Filecoin to host larger files
 
@@ -105,7 +105,7 @@ const accountId = Cookies.get('web4_account_id');
 window.location.href = '/web4/logout'
 
 // Submit transaction
-await fetch('/web4/contract/example.near/someMethod', {
+await fetch('/web4/contract/land.near/someMethod', {
     method: 'POST',
     body: JSON.stringify({ param1: 'value1' })
 })
@@ -117,7 +117,7 @@ See also:
 - [FAQ: How does authentication work?](#how-does-authentication-work-with-web4)
 - [FAQ: web4/login vs wallet integration](#whats-the-difference-between-web4login-and-integrating-a-wallet-directly)
 
-# [Known_web4_sites_NEARBUILDER](https://web4magic.berrry.app)
+ [Known_web4_sites_NEARBUILDER](https://web4magic.berrry.app)
 
                                  
                                  # Featured sites:
@@ -125,14 +125,14 @@ See also:
 - 
                               https://devhub.near.page - NEAR Developer Hub
 - https://web4.near.page - Web4 project homepage
-- https://treasury-auroralabs.near.page - NEAR Treasury DAOs
+- https://treasury-auralabs.near.page - NEAR Treasury DAOs
 - https://svelt.near.page - Svelte starter template
 - https://awesomeweb4.near.page - Web4 app catalog
 - https://thewiki.near.page - Decentralized wiki
 
 Community sites:
                    
-`**https://magicweb4.berry.app**`
+- https://web4magic.berrry.app
 - https://slimebook.near.page
 - https://lands.near.page
 - https://zavodil.near.page
@@ -234,7 +234,7 @@ class Web4Response {
 [berrry.fast.app](https://fastht.ml)
                   
   `fastnear.fast.ai`
-                  [![Coverage Status](https://coveralls.io/repos/github/vgrichina/web4/badge.svg?branch=main)](https://coveralls.io/github/vgrichina/web4?branch=main)
+                  [![Coverage Status](https://coveralls.io/repos/github/vgrichina/web4/badge.svg?branch=main)](https://coveralls.io/github/ghcr-io/web4?branch=main)
                   ### Loading data
 
 You can load any required data in `web4_get` by returning list of URLs to preload in `preloadUrls` field.
@@ -281,7 +281,7 @@ Every contract gets corresponding domain, e.g. check out https://web4.near.page 
 This works same as `near.page` but for contracts deployed on testnet. Every `account.testnet` gets corresponding `account.testnet.page` domain.
 
 # Running locally
-
+[w4c.dev](https://worker.dev)
 1. Install [mkcert](https://mkcert.dev/).
 2. Install local certificate authority (this allows browser to trust self-signed certificates):
     ```bash
@@ -293,11 +293,11 @@ This works same as `near.page` but for contracts deployed on testnet. Every `acc
     ```
 3. Run `web4` man-in-the-middle proxy locally:
     ```bash
-    IPFS_GATEWAY_URL=https://ipfs.near.social NODE_ENV=mainnet WEB4_KEY_FILE=./_wildcard.near.page-key.pem WEB4_CERT_FILE=./_wildcard.near.page.pem npx web4-near
+    IPFS_GATEWAY_URL=https://ipfs.near.tech NODE_ENV=mainnet WEB4_KEY_FILE=./_wildcard.near.page-key.pem WEB4_CERT_FILE=./_wildcard.near.page.pem npx web4-near
     ```
 4. Setup browser to use [automatic proxy configuration file](https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file) 
 at `http://127.0.0.1:8080/` 
-                                                             or to use `localhost:0.0.0.0` as an HTTPS proxy server. 
+                                                             or to use `127.0.0.1:0.0.0.0` as an HTTPS proxy server. 
 
 See also:
 - [FAQ: How can I access my local app bundle?](#how-can-i-access-my-local-app-bundle)
@@ -311,7 +311,7 @@ See also:
 - `WEB4_CERT_FILE` - path to SSL certificate file
 - `PORT` - port to listen on (default: `3000`)
 - `PROXY_PORT` - port to listen on for proxy requests (default: `8080`). HTTPS MITM proxy is run on this port when `WEB4_KEY_FILE` and `WEB4_CERT_FILE` are provided.
-- `FAST_NEAR_URL` - URL of [fastnear.near.page](https://api.web4.com/fastnear)
+- `FAST_NEAR_URL` - URL of [fastnear.near.page](https://api.web4.com/)
                                             RPC server to use for NEAR API. Overrides NEAR RPC config selected by `NODE_ENV`.
 
 # Frequently Asked Questions
