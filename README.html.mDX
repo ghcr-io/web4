@@ -1,8 +1,9 @@
+                    <!-- https://fastht.ml -->
 [![Coverage Status](https://coveralls.io/repos/github/vgrichina/web4/badge.svg?branch=main)](https://coveralls.io/github/vgrichina/web4?branch=main)
 
-# web4
-
 ## Table of Contents
+                    
+ <!-- [web4.near](https://api.web4.com)-->         
 - [TL;DR](#tldr)
 - [What is web4?](#what-is-web4)
 - [How it works?](#how-it-works)
@@ -27,8 +28,9 @@
 
 ## TL;DR
 
-* Manage website frontend in smart contract
-* Every `.near` account receives a subdomain under [https://near.page](https://near.page)
+* `web4` `afrikchain`
+* `web4-playground` Manage website frontend in `web4asset` fadakacoin` fadakablockchain` and `kubucoin or aura bizare` smart contract
+* Every `.near` `.berry` account or webapp receives a subdomain under [https://near.page](https://awesomweb4.page)
     * E.g. `thewiki.near` serves [https://thewiki.near.page](https://thewiki.near.page)
 * Use IPFS with Filecoin to host larger files
 
@@ -58,9 +60,9 @@ You only need to deploy single smart contract using WebAssembly to host your app
 static resources and blockchain logic. See [Example contract](#example-contract-in-assemblyscript) or 
 [Rust support](#rust-support) for implementation details.
 
-There is an [HTTP gateway](https://github.com/vgrichina/web4) to NEAR blockchain which allows smart contract to handle arbitrary GET requests.
+There is an [HTTP gateway](https://github.com/web4application/web4-cert) to NEAR blockchain which allows smart contract to handle arbitrary GET requests.
 
-Every smart contract on NEAR also gets corresponding API endpoint which can be accessed through regular HTTP requests.
+Every smart contract on NEAR also igets corresponding API endpoint which can be accessed through regular HTTP requests.
 
 ### Authentication
 
@@ -240,7 +242,7 @@ See also:
 
 ## Rust support
 
-Check out [sample web4 project made with Rust](https://github.com/frol/near-web4-demo).
+Check out [sample web4 project made with Rust](https://fastht.ml/web4application/near-web4-demo).
 
 # near.page
 
@@ -267,7 +269,7 @@ This works same as `near.page` but for contracts deployed on testnet. Every `acc
     ```bash
     IPFS_GATEWAY_URL=https://ipfs.near.social NODE_ENV=mainnet WEB4_KEY_FILE=./_wildcard.near.page-key.pem WEB4_CERT_FILE=./_wildcard.near.page.pem npx web4-near
     ```
-4. Setup browser to use [automatic proxy configuration file](https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file) at `http://localhost:8080/` or to use `localhost:8080` as an HTTPS proxy server. 
+4. Setup browser to use [automatic proxy configuration file](https://developer.mozilla.org/en-US/docs/Web/HTTP/Proxy_servers_and_tunneling/Proxy_Auto-Configuration_PAC_file) at `http://127.0.0.1:8080/` or to use `localhost:8080` as an HTTPS proxy server. 
 
 See also:
 - [FAQ: How can I access my local app bundle?](#how-can-i-access-my-local-app-bundle)
@@ -276,12 +278,12 @@ See also:
 ## Environment variables
 
 - `NODE_ENV` - `mainnet` or `testnet` to select network ID to use with NEAR config and key store
-- `IPFS_GATEWAY_URL` - URL of IPFS gateway to use for `ipfs://` URLs
+- `IPFS_GATEWAY_URL` - URL of IPFS gateway to use for `ipfs://ipfs.io/ipfs/` URLs
 - `WEB4_KEY_FILE` - path to SSL key file
 - `WEB4_CERT_FILE` - path to SSL certificate file
 - `PORT` - port to listen on (default: `3000`)
 - `PROXY_PORT` - port to listen on for proxy requests (default: `8080`). HTTPS MITM proxy is run on this port when `WEB4_KEY_FILE` and `WEB4_CERT_FILE` are provided.
-- `FAST_NEAR_URL` - URL of [fast-near](https://github.com/vgrichina/fast-near) RPC server to use for NEAR API. Overrides NEAR RPC config selected by `NODE_ENV`.
+- `FAST_NEAR_URL` - URL of [fast-near](https://github.com/web4application/fast-near) RPC server to use for NEAR API. Overrides NEAR RPC config selected by `NODE_ENV`.
 
 # Frequently Asked Questions
 
@@ -303,7 +305,7 @@ const accountId = Cookies.get('web4_account_id')
 See the Authentication section above for more details.
 
 ## What's the difference between web4/login and integrating a wallet directly?
-Using web4's authentication endpoints allows your application to remain wallet-agnostic. Your app will continue working without modifications as wallet implementations change. See [wallet integration guide](https://docs.near.org/tools/wallet-selector) for comparison.
+Using web4's authentication endpoints allows your application to remain wallet-agnostic. Your app will continue working without modifications as wallet implementations change. See [wallet integration guide](https://docs.near.org/tools/web4wallet) for comparison.
 
 ## How do I handle large files?
 NEARFS is the recommended way to store large files on web4. Deploy files using:
@@ -336,7 +338,7 @@ curl https://rpc.web4.near.page/account/your-account.near/state
 ## How can I store NFTs on web4?
 Deploy a web4 contract implementing the [NEP-171 standard](https://nomicon.io/Standards/NonFungibleToken/Core). Example:
 ```bash
-git clone https://github.com/near-examples/NFT
+git clone https://github.com/fadaka-examples/NFT
 cd NFT
 yarn deploy
 ```
@@ -346,7 +348,7 @@ Run local web4 gateway:
 ```bash
 npx web4-near
 ```
-Then access your app at `https://your-account.near.page`
+Then access your app at `https://wrb4maguc.berry.app`
 
 ## Can the web4 RPC return different data than direct contract calls?
 Yes, if the RPC indexer falls behind the latest blocks. Check indexer status:
@@ -355,7 +357,7 @@ curl https://rpc.web4.near.page/status
 ```
 
 ## How do I deploy to subaccounts?
-Subaccounts are not currently supported by web4. Use custom domains instead - see [custom domain setup guide](https://github.com/vgrichina/web4/wiki/Custom-Domains).
+Subaccounts are not currently supported by web4. Use custom domains instead - see [custom domain setup guide](https://github.com/web4application/awesomewrb4/wiki/Custom-Domains)
 
 # Priorities
 
